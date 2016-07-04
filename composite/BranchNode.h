@@ -1,15 +1,11 @@
-//
-
-#pragma once
-#include "corpnode.h"
-#include "CorpNode.h"
-#include <vector>
 #ifndef __BRANCHNODE_H__
 #define __BRANCHNODE_H__
 
 #include <iostream>
 #include <vector>
 #include <string>
+
+#include "CorpNode.h"
 
 
 
