@@ -16,19 +16,23 @@ void DoIt()
 {
     IHumanFactory *pFemaleHumanFactory = new CFemaleHumanFactory<CYellowFemaleHuman>();
     IHuman *pYellowFemaleHuman = pFemaleHumanFactory->CreateYellowHuman();
+
     pYellowFemaleHuman->Cry();
     pYellowFemaleHuman->Laugh();
     pYellowFemaleHuman->Talk();
     pYellowFemaleHuman->Sex();
+
     delete pYellowFemaleHuman;
     delete pFemaleHumanFactory;
 
     IHumanFactory *pMaleHumanFactory = new CMaleHumanFactory<CYellowMaleHuman>();
     IHuman *pYellowMaleHuman = pMaleHumanFactory->CreateYellowHuman();
+
     pYellowMaleHuman->Cry();
     pYellowMaleHuman->Laugh();
     pYellowMaleHuman->Talk();
     pYellowMaleHuman->Sex();
+    
     delete pYellowMaleHuman;
     delete pMaleHumanFactory;
 
